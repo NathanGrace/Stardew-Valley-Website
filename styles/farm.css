@@ -1,0 +1,121 @@
+html {
+	background-image: url("https://games-b26f.kxcdn.com/wp-content/uploads/2018/03/thumb-1920-782781.png");
+	height: 100%;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+	overflow-y: scroll;
+}
+/*------------------------------------BODY--------------------------------*/
+body {
+	width: 1000px;
+	margin: 0 auto;
+	padding: 0;
+	background-color: #F6F1E6;
+}
+/*---------------------------------NAV BAR---------------------------------*/
+#horizlist ul {
+	list-style-type: none;
+	position: relative;
+	margin: 0;
+	padding: 0;
+}
+#horizlist ul li {
+	float: left;
+}
+#horizlist ul li a {
+	float: left;
+	display: block;
+	text-align: center;
+	width: 200px;
+	padding: 1em 0;
+	text-decoration: none;
+	background-color: black;
+	color: white;
+	font-weight: bold;
+}
+#horizlist ul li a.current {
+	color: #D8A44B;
+}
+#horizlist ul li a.lastitem {
+	border-right: none;
+	width: 160px;
+}
+#horizlist ul ul {
+	display: none;
+	position: absolute;
+	top: 100%
+}
+#horizlist ul ul li {
+	float: none;
+}
+#horizlist ul li:hover > ul {
+	display: block;
+}
+#horizlist > ul::after {
+	content: "";
+	display: block;
+	clear: both;
+}
+#horizlist a:hover, a:focus {
+	background-color: gray;
+	color: #66CD70;
+}
+/*------------------------------------MAIN---------------------------------*/
+main h1 {
+	font-size: 200%;
+	text-align: center;
+	font-family: Georgia;
+}
+main h2 {
+	text-align: center;
+	font-family: Georgia;
+}
+main h3 {
+	text-align: center;
+	font-family: Georgia;
+}
+main p {
+	padding-left: 30px;
+	padding-right: 30px;
+	font-family: Georgia;
+	text-align: left;
+	font-size: 110%;
+}
+#farms {
+	padding-left: 10px;
+}
+#summary {
+	text-align: center;
+	font-family: Georgia;
+}
+/*-----------------------------------TABLE---------------------------------*/
+table {
+	font-family: Georgia;
+}
+td {
+	text-align: center;
+}
+/*-----------------------------------FOOTER--------------------------------*/
+footer { 
+	border-top: 2px solid black;
+	padding: 10px;
+    background-image: -webkit-linear-gradient(45deg, black 0%, orange 25%, white 100%);
+    background-image: -moz-linear-gradient(45deg, black 0%, orange 25%, white 100%);
+    background-image: -o-linear-gradient(45deg, black 0%, orange 25%, white 100%);
+    background-image: linear-gradient(45deg, black 0%, orange 25%, white 100%);
+	clear: both;
+} 
+footer p {
+	font-size: 80%;
+	text-align: center;
+	font-style: bold;
+}
+@media print {
+	body {
+		margin: 0 auto;
+		padding: 0;
+		background-color: #F6F1E6;
+	}
+}
